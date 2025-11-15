@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #050038;
+}
+// Для теста
+body {
+  .grid-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 3fr 3fr;
+    text-align: center;
+    gap: 40px;
+    padding: 120px 40px;
+    background: #ffd02f;
+    .grid-item-header {
+      grid-column: 1 / 4;
+      margin-bottom: 100px;
+      h1 {
+        font-size: 48px;
+        width: 525px;
+      }
+      a {
+        &:hover {
+          color: #050038b2;
+        }
+        p {
+          margin-top: 20px;
+          &:hover {
+            color: #050038b2;
+          }
+        }
+      }
+    }
+    .grid-item {
+      width: 360px;
+      img {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
