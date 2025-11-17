@@ -8,35 +8,36 @@
 }
 
 body .grid-container {
+  margin: 0 auto;
+  width: 1200px;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 3fr 3fr;
   text-align: center;
-  gap: 40px;
-  padding: 120px 40px;
+  row-gap: 100px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  padding: 100px 40px;
   background: #ffd02f;
 }
 body .grid-container .grid-item-header {
   grid-column: 1/4;
-  margin-bottom: 100px;
 }
 body .grid-container .grid-item-header h1 {
   font-size: 48px;
   width: 525px;
 }
+body .grid-container .grid-item-header a {
+  display: block;
+  margin-top: 20px;
+}
 body .grid-container .grid-item-header a:hover {
   color: rgba(5, 0, 56, 0.6980392157);
 }
-body .grid-container .grid-item-header a p {
-  margin-top: 20px;
-}
-body .grid-container .grid-item-header a p:hover {
-  color: rgba(5, 0, 56, 0.6980392157);
-}
-body .grid-container .grid-item {
-  width: 360px;
-}
 body .grid-container .grid-item img {
   margin-bottom: 25px;
+}
+body .grid-container .grid-item p {
+  font-size: 18px;
 }/*# sourceMappingURL=styles.css.map */
